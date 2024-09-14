@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container2 {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            width: 90%;
+            margin: 0 auto;
+            justify-content: center;
+        }
+
+        .container2 .img {
+            width: 230px;
+            height: 210px;
+            margin: 1rem;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .container2 .img:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            text-align: center;
+            word-spacing: 0.6em;
+            letter-spacing: 0.3em;
+            color: white;
+            margin: 10px 0;
+        }
+
+        .banner {
+            max-width: 1200px;
+            min-width: 200px;
+            width: 90%;
+            margin: 0 auto;
+            background-color: cadetblue;
+            padding: 20px 0;
+        }
+
+        .banner marquee {
+            font-size: 1.5em;
+        }
+
+        img {
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: cadetblue;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+        }
+
+        /* Popup Styles */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .popup-content {
+            position: relative;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 90%;
+            max-height: 90%;
+            overflow: auto;
+        }
+
+        .popup-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #333;
+        }
+
+        .download-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: cadetblue;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-btn:hover {
+            background-color: darkcyan;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            .container2 .img {
+                width: 180px;
+                height: 160px;
+            }
+
+            .banner marquee {
+                font-size: 1.2em;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .container2 .img {
+                width: 140px;
+                height: 120px;
+                margin: 0.5rem;
+            }
+
+            .banner marquee {
+                font-size: 1em;
+            }
+
+            h1 {
+                word-spacing: 0.4em;
+                letter-spacing: 0.2em;
+            }
+        }
+
+        @media screen and (max-width: 360px) {
+            .container2 .img {
+                width: 120px;
+                height: 100px;
+                margin: 0.4rem;
+            }
+
+            .banner marquee {
+                font-size: 0.9em;
+            }
+
+            h1 {
+                font-size: 1.2em;
+                word-spacing: 0.2em;
+                letter-spacing: 0.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <marquee behavior="" direction="right"><h1>WELCOME TO CAMERA</h1></marquee>
+    </div>
+    <main class="container2">
+        <div class="img">
+            <img src="./IMAGE/img 10.jpg" alt="Image 1">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/img 7.jpg" alt="Image 2">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/img 2.avif" alt="Image 3">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/image 3.jpg" alt="Image 4">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/img 12.jpg" alt="Image 5">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/IMG 1.jpg" alt="Image 6">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/img 16.webp" alt="Image 7">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/img 14.jpg" alt="Image 8">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/img 15.jpg" alt="Image 8">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/image 3.jpg" alt="Image 4">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/img 12.jpg" alt="Image 5">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/IMG 1.jpg" alt="Image 6">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/img 12.jpg" alt="Image 5">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/IMG 1.jpg" alt="Image 6">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/img 16.webp" alt="Image 7">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/img 14.jpg" alt="Image 8">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/img 15.jpg" alt="Image 8">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/image 3.jpg" alt="Image 4">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/img 12.jpg" alt="Image 5">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/IMG 1.jpg" alt="Image 6">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/img 12.jpg" alt="Image 5">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/IMG 1.jpg" alt="Image 6">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/img 16.webp" alt="Image 7">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/img 14.jpg" alt="Image 8">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/img 15.jpg" alt="Image 8">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/image 3.jpg" alt="Image 4">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/img 12.jpg" alt="Image 5">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/IMG 1.jpg" alt="Image 6">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/img 12.jpg" alt="Image 5">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/IMG 1.jpg" alt="Image 6">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/img 16.webp" alt="Image 7">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/img 14.jpg" alt="Image 8">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/img 15.jpg" alt="Image 8">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/image 3.jpg" alt="Image 4">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/img 12.jpg" alt="Image 5">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/IMG 1.jpg" alt="Image 6">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/img 12.jpg" alt="Image 5">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/IMG 1.jpg" alt="Image 6">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/img 16.webp" alt="Image 7">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/img 14.jpg" alt="Image 8">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/img 15.jpg" alt="Image 8">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/image 3.jpg" alt="Image 4">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/img 12.jpg" alt="Image 5">
+        </div>
+        <div class="img">
+            <img src="./IMAGE/IMG 1.jpg" alt="Image 6">
+        </div>
+    </main>
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close-btn" id="close-btn">&times;</span>
+            <img id="popup-img" src="" alt="Popup Image">
+            <a id="download-btn" class="download-btn" href="" download>Download Image</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Camera Gallery. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Get elements
+        const popup = document.getElementById('popup');
+        const popupImg = document.getElementById('popup-img');
+        const closeBtn = document.getElementById('close-btn');
+        const downloadBtn = document.getElementById('download-btn');
+        const images = document.querySelectorAll('.container2 .img img');
+
+        // Add click event to images
+        images.forEach(img => {
+            img.addEventListener('click', () => {
+                popupImg.src = img.src;
+                downloadBtn.href = img.src;
+                popup.style.display = 'flex';
+            });
+        });
+
+        // Close popup on clicking close button
+        closeBtn.addEventListener('click', () => {
+            popup.style.display = 'none';
+        });
+
+        // Close popup when clicking outside the content
+        window.addEventListener('click', (e) => {
+            if (e.target === popup) {
+                popup.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
